@@ -1,0 +1,706 @@
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative; 
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gold-text{
+    color: goldenrod;
+    text-shadow: 0px 3px 5px black;
+}
+
+.wrapper{
+    max-width: 2560px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.underline{
+    margin: 0 auto 40px;
+    width: 80px;
+    height: 4px;
+    background-color: goldenrod;
+}
+
+.scroll-fix::before{
+    content: '';
+    display: block;
+    height: 56px;
+    margin-top: -56px;
+}
+
+.visibility{
+    visibility: hidden;  
+}
+
+.jumbotron{
+    margin: 0;
+    background-color: rgb(243, 242, 241);
+    /* background-color: #f9f9f9; */
+}
+
+/* NAWIGACJA */
+
+nav{
+    text-transform: uppercase;
+    -webkit-transition: background-color .6s;
+    transition: background-color .6s;
+}
+
+nav .navbar-brand{
+    font-weight: bold;
+}
+
+nav a, nav i{
+    color: #ffffff;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+nav i{
+    padding: 10px;
+}
+
+nav i:hover{
+    color: #aaaaaa;
+}
+
+nav a:hover{
+    color: #aaaaaa;
+}
+
+nav .active{
+    color: goldenrod;
+}
+
+nav .nav-shadow{
+    text-shadow: 0 3px 5px black;
+}
+
+nav .navbar-nav{
+    text-shadow: 5px 3px 5px black;
+}
+
+nav img{
+    transition: transform .1s;
+}
+nav img:hover{
+    transform: scale(1.2);
+}
+
+.shadow-bg{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+
+/* HEADER */
+
+header{
+    color: #ffffff;
+    overflow: hidden;
+}
+
+header h1{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+header .hero-img{
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/massage3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+header .hero-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    z-index: -1;
+}
+
+header .hero-txt{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    text-align: center;
+    text-shadow: 0 3px 5px black;
+}
+
+header .btn-outline-light{
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+header .fa-chevron-down{
+    display: none;
+}
+
+/* MAIN */
+
+/* #aboutme i{
+    margin-top: 20px;
+    font-size: 30px;
+} */
+  
+#aboutme h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+  
+#aboutme p{
+    font-size: 17px;
+}
+
+#aboutme span{
+    font-weight: bold;
+    color: goldenrod;
+    text-transform: uppercase;
+}
+
+#aboutme .aboutme-box{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+    margin: 20px 0px;
+    padding: 20px 12px;
+    line-height: 30px;
+    transition: transform .3s;
+}
+
+#aboutme .jumbotron{
+    position: relative;
+    padding: 10px 0;
+}
+
+#aboutme .wrapper{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#aboutme .aboutme-card{
+    position: relative;
+}
+
+#aboutme .aboutme-card p{   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 15px;  
+}
+
+#aboutme .card{
+    background-color: #fafafa;
+}
+
+/* #aboutme-hero{
+    color: #ffffff;
+    overflow: hidden;
+} */
+
+#aboutme-hero .jumbotron{
+    position: relative;
+    padding: 60px 0;
+    height: 500px;
+    background-image: url('../img/massage9.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+/* #aboutme-hero .jumbotron h2{
+    font-size: 32px;
+}
+
+#aboutme-hero .jumbotron i{
+    font-size: 35px;
+}
+
+#aboutme-hero .jumbotron p{
+    font-size: 15px;
+} */
+
+#aboutme-hero .about-shadow{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: -1;
+}
+
+/* #about-hero .about-hero-item{
+    margin: 10px 0;
+} */
+
+/* PORTFOLIO */
+/* 
+#portfolio .carousel-item{
+    position: relative;
+    height: 600px;
+}
+
+#portfolio .carousel-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#portfolio .carousel-caption{
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    left: 0;
+    right: 0;
+    padding: 40px 0;
+}
+
+#portfolio .carousel-indicators{
+    padding-bottom: 20px;
+} */
+
+/* CENY */
+
+#offers{
+    overflow: hidden;
+}
+
+#offers .offer-wrap{
+    max-width: 2560px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#offers .offer-box{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+    margin: 20px 10px;
+    padding: 30px;
+}
+
+#offers h3{
+    text-transform: uppercase;
+    color: goldenrod;
+    text-align: center;
+}
+
+#offers span{
+    font-weight: bold;
+}
+
+#offers i{
+    font-size: 23px;
+    padding: 0 5px;
+}
+
+/* #offers button{
+    padding: 10px -20px;
+    text-transform: uppercase;
+} */
+
+#offers .price{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* #offers .offer-text{
+    margin-top: 30px;
+    padding: 25px;
+} */
+
+/* #offers .offer-text a{
+    color: goldenrod;
+} */
+
+#offers .offer-button{
+    text-align: center;
+}
+
+#offers .offer-button button{
+    background-color: #f5f5f5;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.125);
+    text-transform: uppercase;
+    outline: 0;
+}
+
+#offers .offer-button button:hover{
+    background-color: #e4e4e4;
+}
+
+.btn-box{
+    margin-top: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 17px 10px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
+}
+
+/* PROMOCJE */
+
+#promotion .jumbotron{
+    position: relative;
+    background-image: url('../img/massage1.jpg');
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+#promotion .jumbotron h2{
+    color: #ffffff;
+}
+
+#promotion .promotion-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.3);
+}
+
+/* #promotion .wrapper{
+    margin-bottom: 100px;
+} */
+
+/* #promotion .card img{
+    height: 300px;
+    object-fit: cover;
+} */
+
+/* #promotion .card i{
+    padding: 10px 20px;
+} */
+
+#promotion .card{
+    text-align: center;
+    transition: transform .3s;
+}
+
+#promotion .card:hover{
+    transform: scale(.96);
+}
+
+#promotion .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#promotion .card-title{ 
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#promotion .card-text{
+
+    font-size: 20px;
+    /* line-height: 80px; */
+}
+
+#promotion .body-hr hr{
+    background-color: goldenrod;
+    height: 2px;
+}
+
+/* WIZYTA */
+
+#visits .visit{
+    /* padding: 20px 0; */
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.1);
+    /* margin: 20px 0px; */
+    padding: 20px 12px;
+    border-radius: 5px;
+    transition: transform .3s;
+}
+
+#visits .visit-list{
+    text-align: justify;
+    text-align: center;
+}
+
+#visits h4{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#visits .visit-text{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+#visits p{
+    font-size: 16px;
+}
+
+/* KONTAKT */
+
+#contact .jumbotron{
+    position: relative;
+    background-image: url('../img/massage4.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 0;
+}
+
+#contact .contact-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,.65);
+    z-index: -1;
+}
+
+#contact .jumbotron h2{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#contact .jumbotron .underline{
+    /* background-color: #ffffff; */
+    background-color: goldenrod;
+}
+
+#contact .contact-us{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+#contact .contact-item{
+    margin: 30px 0; 
+    padding: 0;
+}
+
+#contact .contact-us .contact-item h3{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item a{
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#contact .contact-us .contact-item a:hover{
+    color: goldenrod;
+}
+
+#contact .contact-us .contact-item p{
+    font-size: 13px;
+}
+
+#contact .contact-us .contact-item .social-media a{ 
+    padding: 10px;
+    font-size: 30px;
+    color: #ffffff;
+    text-shadow: 0 0 5px black;
+}
+
+#contact .contact-us .contact-item .social-media a:hover{
+    color: goldenrod;
+}
+
+#contact .contact-us .contact-item .social-media i{
+    transition: transform .3s;
+}
+
+#contact .contact-us .contact-item .social-media i:hover{
+    transform: scale(1.3);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+   
+}
+
+footer p{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #bbbbbb;
+    
+}
+
+footer i:hover{
+    color: goldenrod;
+}
+
+/* Cookies */
+
+#cookies-message{ 
+    padding: 12px 10px; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0px; 
+    left: 0; 
+    right: 0; 
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 100000; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.4); 
+    display: none;
+}
+
+#cookies-message p{
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff; 
+}
+
+#cookies-message a{
+    text-decoration: none;
+    color: white;
+}
+
+#cookies-message .btn-cookies{ 
+    background-color: goldenrod; 
+    color: black; 
+    border-radius: 5px;
+    transition: all 0.5s; 
+    padding: 2px 30px; 
+    display: inline-block; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+#cookies-message .btn-cookies:hover{ 
+    color: #ffffff;
+    background-color: rgb(170, 132, 37);
+}
+
+@media (min-width: 375px){
+    header h1{
+        font-size: 36px;
+    }
+    
+    header .hero-text p{
+        font-size: 16px;
+    }
+    
+    #aboutme-hero .jumbotron h2{
+        font-size: 36px;
+    }
+
+    #aboutme-hero .jumbotron h3{
+        font-size: 32px;
+    }
+    
+    #aboutme-hero .jumbotron p{
+        font-size: 18px;
+    }
+
+    #contact .contact-us .contact-item p{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 414px){    
+    #aboutme-hero .jumbotron{
+        padding: 80px 0;
+    }
+
+    #offers .offer-box ul > li{
+        /* text-align: left; */
+        margin-left: 50px;
+    }
+    #visits .visit ul > li{
+        /* text-align: left; */
+        margin-left: 50px;
+    }
+}
+
+/* @media (min-width: 500px){    
+    #promotion .card-body{
+        height: 200px;
+    }
+} */
+
+@media  (max-width: 1000px){
+   nav{
+        background-color: rgba(0, 0, 0, 0.9);   
+   } 
+}
+
+@media  (max-width: 500px){
+    .offer-wrap{
+        text-align: center;   
+    }  
+    #offers .offer-box ul > li{
+        margin-left: 30px;
+        text-align: left;
+    }
+    #visits .visit ul > li{
+        /* text-align: left; */
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+

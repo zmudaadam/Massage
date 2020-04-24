@@ -1,0 +1,15 @@
+#offers .offer-wrap{
+    width: 90%;
+    text-align: justify;
+}
+
+#aboutme .aboutme-card .card-body{
+    min-height: 60px;
+    text-align: center;
+} 
+
+#aboutme .wrapper .aboutme-box{ 
+    text-align: justify;
+}
+/* @media (min-width: 576px) {     
+} */

@@ -1,0 +1,35 @@
+header h1{
+    font-size: 42px;
+}
+
+header .hero-text p{
+    font-size: 20px; 
+}
+
+
+#offers .offer-wrap{
+    width: 70%;
+}
+
+#offers .offer-box ul > li{ 
+    margin-left: 50px;
+} 
+
+#promotion .card{
+    margin: 50px 20px;
+}
+
+#visits .wrapper{
+    width: 70%;
+}
+
+#visits .visit-list{
+    text-align: justify;
+}
+ 
+#visits .visit ul > li{
+    margin-left: 50px;
+}
+
+/* @media (min-width: 768px) { 
+} */
